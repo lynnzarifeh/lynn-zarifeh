@@ -1,5 +1,5 @@
 import socket
-import requests
+
 from time import time
 from datetime import datetime
 serverSocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
