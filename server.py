@@ -9,7 +9,6 @@ serverSocket.bind((PC_IP,serverPort))
 serverSocket.listen(1)
 print("the server is ready to receive")
 while True:
-    try:
         connectionSocket, addr=serverSocket.accept()
         IP_address = connectionSocket.recv(1024)
         print("address of client: ",addr)
@@ -28,8 +27,7 @@ while True:
         print("reply was sent at time:",datetime.utcnow())
         serverSocket.close()
         socketNew.close()
-    except:
-        print("error")
+  
     
     
         
